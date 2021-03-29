@@ -2,4 +2,4 @@
 import '../scss/main.scss';
 import '../scss/util.scss';
 
-console.log('Beemo start');
+console.log('115');
