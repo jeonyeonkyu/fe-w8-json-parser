@@ -16,6 +16,9 @@
 
 .arrow_section {
   place-self: center;
+  &--image {
+    width: 100px;
+  }
 }
 
 .result_section {
