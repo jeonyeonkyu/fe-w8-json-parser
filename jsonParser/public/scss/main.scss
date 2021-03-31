@@ -4,8 +4,6 @@
 
 .add_section {
   margin: 0 auto;
-  &__input_box {
-  }
   &__analysis {
     text-align-last: end;
     &--button {
@@ -16,12 +14,9 @@
 
 .arrow_section {
   place-self: center;
-<<<<<<< HEAD
-=======
   &--image {
     width: 100px;
   }
->>>>>>> 1b91f6ef7a771d33997bf74a50c6d1733f309930
 }
 
 .result_section {
@@ -30,5 +25,6 @@
     width: 500px;
     height: 700px;
     border: 1px solid black;
+    overflow: auto;
   }
 }
