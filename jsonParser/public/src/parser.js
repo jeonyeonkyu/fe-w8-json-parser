@@ -1,5 +1,4 @@
 function parser(tokens) {
-  if (!tokens[0]) return tokens;
   let i = 0;
   function arrayParser(parentNode = { type: 'array', child: [] }) {
     while (++i < tokens.length) {
@@ -21,10 +20,9 @@ function parser(tokens) {
     return parentNode;
   }
 
-  function objectParser() {
+  function objectParser(parentNode = { type: 'object', child: [] }) {
     let j = 0;
     let isKey = true;
-    const parentNode = { type: 'object', child: [] };
     while (++i < tokens.length) {
       switch (tokens[i].value) {
         case '[':
