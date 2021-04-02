@@ -1,4 +1,4 @@
-function tokenizer(stringData) {
+function tokenize(stringData) {
   const tokenizedData = stringData
     .replace(/\/\*.*?\*\//g, '')
     .match(
@@ -7,4 +7,4 @@ function tokenizer(stringData) {
   return tokenizedData;
 }
 
-export default tokenizer;
+export default tokenize;

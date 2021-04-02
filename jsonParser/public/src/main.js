@@ -1,9 +1,9 @@
 
 import '../scss/main.scss';
 import '../scss/util.scss';
-import tokenizer from './tokenizer.js';
-import lexer from './lexer.js';
-import parser from './parser.js';
+import tokenize from './tokenize.js';
+import lexicalize from './lexicalize.js';
+import parse from './parse.js';
 
 function load() {
   const el = {
@@ -13,9 +13,9 @@ function load() {
   }
 
   function parseClickHandler() {
-    const tokens = tokenizer(el.$textarea.value);
-    const lexerTokens = lexer(tokens);
-    const parseData = parser(lexerTokens);
+    const tokens = tokenize(el.$textarea.value);
+    const lexerTokens = lexicalize(tokens);
+    const parseData = parse(lexerTokens);
     el.$printBox.innerText = JSON.stringify(parseData, null, ' ');
   }
 

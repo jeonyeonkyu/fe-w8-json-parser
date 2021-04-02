@@ -1,4 +1,4 @@
-function parser(tokens) {
+function parse(tokens) {
   const firstToken = tokens[0];
   const nextTokens = tokens.slice(1);
   switch (firstToken.value) {
@@ -80,4 +80,4 @@ function objectParser(list, idx = 0, parentNode = makeStructure('object')) {
   return parentNode;
 }
 
-export default parser;
+export default parse;
