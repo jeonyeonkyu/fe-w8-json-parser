@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+}
+
+.add_section {
+  margin: 0 auto;
+  &__analysis {
+    text-align-last: end;
+    &--button {
+      cursor: pointer;
+    }
+  }
+}
+
+.arrow_section {
+  place-self: center;
+  &--image {
+    width: 100px;
+  }
+}
+
+.result_section {
+  margin: auto;
+  &__print_box {
+    width: 500px;
+    height: 700px;
+    border: 1px solid black;
+    overflow: auto;
+  }
+}

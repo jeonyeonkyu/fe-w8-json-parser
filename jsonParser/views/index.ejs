@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>makingJsonParser</title>
+</head>
+
+<body>
+  <section class="wrapper">
+
+    <section class="add_section">
+      <h1>JSON 데이터를 추가해주세요</h1>
+      <div class="add_section__input_box">
+        <textarea class="_input_text" cols="60" rows="20">["1a3",[null,false,["1 1",[112233],{"easy" : ["hello", {"a":"a"}, "world"]},112],55, "99"],{"a":"str", "b":[912,[5656,33],{"key" : "innervalue", "newkeys": [1,2,3,4,5]}]}, true]
+        </textarea>
+      </div>
+      <div class="add_section__analysis">
+        <button class="add_section__analysis--button _button"> 분석하기 </button>
+      </div>
+    </section>
+
+    <section class="arrow_section">
+      <div><img class="arrow_section--image"
+          src="https://user-images.githubusercontent.com/61257242/112853619-01af2500-90e8-11eb-953b-a5c507fe3ce0.png"
+          alt="arrowImage"></div>
+    </section>
+
+    <section class="result_section">
+      <h1>분석결과 입니다</h1>
+      <div class="result_section__print_box">
+        <pre class="_print_box"></pre>
+      </div>
+    </section>
+
+  </section>
+
+  <script src="./main_bundle.js"></script>
+</body>
+
+</html>
